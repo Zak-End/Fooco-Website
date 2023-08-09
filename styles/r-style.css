@@ -1,0 +1,58 @@
+main {
+    padding: 40px 20px; /* Adjust the values as needed */
+    background-color: rgb(224, 182, 184);
+}
+
+main h2 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0 0 0 ;
+    white-space: nowrap;
+    text-align: center;
+    grid-column: 1 / -1;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    padding-top: 1vh; /* Decrease this value to move the text lower */
+    font-size: 3rem; /* Increase this value to make the font bigger */
+}
+
+/* Set the display to grid for the main content */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Display sections side by side */
+    grid-gap: 20px; /* Add spacing between sections */
+    justify-content: center; /* Center the sections horizontally */
+    padding: 40px 20px;
+    background-color: rgb(224, 182, 184);
+    
+}
+  
+  /* Style each section */
+  section#resource-info,
+  section#r-cooking-utensils,
+  section#r-facts {
+    max-width: 400px; /* Limit the width of each section */
+    margin: 10px; /* Add spacing between sections */
+    text-align: center; /* Center section content */
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1; /* Distribute available space evenly among sections */
+  }
+  
+  /* Style section headings */
+  section#resource-info h3,
+  section#r-cooking-utensils h3,
+  section#r-facts h3 {
+    color: rgb(182, 238, 50);
+    font-size: 1.5rem;
+    margin-top: 0; /* Remove default margin for <h3> */
+  }
+  
+  /* Style images */
+  section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
